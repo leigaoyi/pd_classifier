@@ -5,6 +5,9 @@
 手腕、左脚、右脚的传感器：加速度计+陀螺仪
 ![Device](https://github.com/leigaoyi/pd_classifier/blob/master/device.PNG)
 
+### 参考项目
+https://github.com/houshd/MLSTM-FCN
+
 ### 加速度计数据步态识别实验
 
 
@@ -81,7 +84,7 @@ Possion  0.8519   0.8714(best)
 
 4)5e-4,0.8047
 
-5)卷积核尺寸3，卷积核数64，LSTM长度128，0.90
+5)卷积核尺寸3，卷积核数64，LSTM长度128，0.90（？）
 
 ### 未来的可行方向
 左脚、右脚的数据的协同预测
