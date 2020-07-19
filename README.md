@@ -23,6 +23,27 @@
 步态辨识实验。数据文件存储在data中，分别是health.npy、pd.npy。模型文件在pa_model中，pa_v2和pa_v3是调试参数的文件，其中
 最佳的实验结果保存在pa_v3中。
 
+### 实验运行
+训练模型：
+
+python3 pa_v3.py 
+
+测试模型：
+
+python3 test.py
+
+原始模型【EEG】：
+lstm_v1.py
+
+
+### Requirements
+keras
+
+tensorflow==1.14
+
+scikit-learn
+
+
 ### 实验记录
 【RMSprop优化器】
 
@@ -44,6 +65,8 @@ Possion  0.8519   0.8714(best)
 
 3)无权重衰减，学习率5e-5，120epoch,保存验证集最好的
 
+
+
 0.8166(test)
 
 【Adam优化器】
@@ -59,6 +82,9 @@ Possion  0.8519   0.8714(best)
 4)5e-4,0.8047
 
 5)卷积核尺寸3，卷积核数64，LSTM长度128，0.90
+
+### 未来的可行方向
+左脚、右脚的数据的协同预测
 
 
 
